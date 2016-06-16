@@ -9,5 +9,7 @@
 
 作品提供了3D模型、图片、视频等方式的增强现实的实现。具体的效果可以查看视频介绍。
 
+[灵境世界介绍](http://mp.weixin.qq.com/s?__biz=MzA4MTQ1MDAwNw==&mid=403699825&idx=1&sn=07d98cabd60162bb8004db8ddcb2f5e5&scene=23&srcid=0511YRoXn3DvqD4WNPulDsk6#rd)
+
 ![](https://github.com/GeniusVJR/SpiritWorld/blob/master/image/ljsj.gif)
 
