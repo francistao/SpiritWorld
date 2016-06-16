@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mycontent_rv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" 
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/cardview_item_targetimage"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dip" 
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/cardview_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:text="@string/title"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="25.0sp" />
+
+        <TextView
+            android:id="@+id/cardview_item_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/cardview_item_title"
+            android:gravity="center_vertical"
+            android:text="@string/content"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

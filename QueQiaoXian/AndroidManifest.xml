@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zhp.iyalee2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" -->
+        <!-- TC -->
+        <activity
+            android:name="tc.lingjingworld.Activity_AddNewFriend"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_Classify"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_FriendInfo"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_Login"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_MyFriends"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_MyItems"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_NewItem_Contain"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_NewItem_Target"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_NewItem_TitleAndProfile"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_Regist"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="tc.lingjingworld.Activity_Start"
+            android:theme="@style/ToolBarAndTranslucentWithoutBackground" />
+        <activity
+            android:name="tc.lingjingworld.Activity_UserCenter"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.Activity_FeedBack"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.ChangePassword"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.Activity_UpdateProfile"
+            android:theme="@style/ToolBarAndTranslucent" />
+        <!-- TC -->
+ 
+        <activity android:name="zhp.iyalee2.SingleTest" />
+        <activity
+            android:name="zhp.iyalee2.Welcome"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.MainActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.backup.MyARActivity"
+            android:theme="@style/FullBleedTheme" >
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.aractivities.ARActivity_MJ"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.aractivities.ARActivity_3G2"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.aractivities.ARActivity_Animals"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.aractivities.ARActivity_Human"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.aractivities.ARActivity_Buildings"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.ListActivity"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.SignUpTest"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.GetIconTest"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="zhp.iyalee2.LogInTest"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.UploadItemTest"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.UploadIcon"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.AddFriend"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.backup.AnimalsActivity"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.aractivities.base.ModelARViewActivity"
+            android:theme="@style/FullScreenAndTranslucent" />
+        <activity
+            android:name="zhp.iyalee2.backup.PictureActivity"
+            android:theme="@style/FullScreenAndTranslucent" >
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.backup.MovieActivity"
+            android:theme="@style/FullScreenAndTranslucent" >
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.aractivities.single.ARActivity_SinglePicture"
+            android:theme="@style/FullScreenAndTranslucent" >
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.aractivities.single.ARActivity_SingleModel"
+            android:theme="@style/FullScreenAndTranslucent" >
+        </activity>
+        <activity
+            android:name="zhp.iyalee2.aractivities.single.ARActivity_SingleMovie"
+            android:theme="@style/FullScreenAndTranslucent" >
+        </activity>
+    </application>
+
+</manifest>

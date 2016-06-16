@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_myfriendlist"
+    android:layout_width="fill_parent"
+    android:layout_height="72.0dip"
+    android:background="#ffffff" >
+
+    <zhp.android.widgets.CircleImageView
+        android:id="@+id/myfriendlist_image"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dip" >
+
+        <TextView
+            android:id="@+id/myfriendlist_name"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:text="@string/friend_name"
+            android:textSize="25.0sp" />
+
+        <TextView
+            android:id="@+id/myfriendlist_says"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/myfriendlist_name"
+            android:gravity="center_vertical"
+            android:text="@string/friend_says"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

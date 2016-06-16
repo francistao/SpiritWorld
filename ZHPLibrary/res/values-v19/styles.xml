@@ -1,0 +1,42 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:listDivider">@color/colorPrimary</item>  
+    </style>
+
+    <!--
+    	用于ToolBar，且需要修改状态栏或底栏颜色时的主题
+    	三个item是透明选项
+    	仅在api19以上起作用，低api有同名主题，但不能透明。
+    -->
+    <style name="ToolBarAndTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listDivider">@drawable/divider</item>  
+    </style>
+
+    <!--
+    	用于ToolBar，且需要修改状态栏或底栏颜色时的主题
+    	【Activity的背景不透明，不用于SlidingFinishActivity】
+    	三个item是透明选项
+    	仅在api19以上起作用，低api有同名主题，但不能透明。
+    -->
+    <style name="ToolBarAndTranslucentWithoutBackground" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listDivider">@drawable/divider</item>  
+    </style>
+
+</resources>

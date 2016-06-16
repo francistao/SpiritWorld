@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classify_background"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/id_mycontent"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="@null" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/please_input_image_type"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_classify_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28.0dip"
+        android:layout_marginLeft="50dip" 
+        android:onClick="onPlantClick">
+
+        <ImageButton
+            android:id="@+id/btn_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/btn_classify_plant_press" />
+
+        <TextView
+            android:id="@+id/tv_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_plant"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/plant"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_classify_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="200dip"
+        android:layout_marginLeft="50dip" 
+        android:onClick="onCarClick">
+
+        <ImageButton
+            android:id="@+id/btn_classify_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/btn_classify_car_press" />
+
+        <TextView
+            android:id="@+id/tv_classify_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_classify_car"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/car"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_classify_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="372dip"
+        android:layout_marginLeft="50dip" 
+        android:onClick="onAnimalClick">
+
+        <ImageButton
+            android:id="@+id/btn_classify_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/btn_classify_animal_press" />
+
+        <TextView
+            android:id="@+id/tv_classify_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_classify_animal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/animal"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_classify_decoretion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="28.0dip"
+        android:layout_marginRight="50dip"
+        android:gravity="center" 
+        android:onClick="onDecorationClick">
+
+        <ImageButton
+            android:id="@+id/btn_classify_decoretion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/btn_classify_decoration_press" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_classify_decoretion"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/decoration"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_classify_human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="200dip"
+        android:layout_marginRight="50dip"
+        android:gravity="center" 
+        android:onClick="onHumanClick">
+
+        <ImageButton
+            android:id="@+id/btn_classify_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/btn_classify_human_press" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_classify_human"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/human"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_classify_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="372dip"
+        android:layout_marginRight="50dip"
+        android:gravity="center" 
+        android:onClick="onBuildingClick">
+
+        <ImageButton
+            android:id="@+id/btn_classify_building"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/btn_classify_building_press" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_classify_building"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/building"
+            android:textColor="#ffffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

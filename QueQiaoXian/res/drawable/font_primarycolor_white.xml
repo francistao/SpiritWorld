@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 白字，按下红字 -->
+    <item android:state_pressed="true" 	android:color="#aa0000"/>
+    <item android:state_focused="true"	android:color= "#aa0000"/>
+    <item android:color="#ffffff" />
+
+</selector>

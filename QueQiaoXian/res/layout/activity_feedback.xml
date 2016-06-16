@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedBack_bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="zhp.app.note.MainActivity" >
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_feedBack_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/activity_feedBack_aboveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_feedBack_toolBar"
+        android:layout_above="@+id/activity_feedBack_finish"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp" >
+
+        <EditText
+            android:id="@+id/activity_feedBack_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请在此输入您的宝贵意见"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="8dp"
+            android:paddingTop="18dp"
+            android:textColorHint="#b7b7b7" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_feedBack_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_white_gray_top_line"
+        android:onClick="onFinishButtonClick"
+        android:text="提交反馈" />
+
+</RelativeLayout>

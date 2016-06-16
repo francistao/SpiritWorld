@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_add_contain_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/activity_add_contain_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/activity_add_contain_toolBar"
+        android:text="请选择内容(png,jpg,zip,3gp)："
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/textColorPrimary" />
+
+    <zhp.iyalee2.views.buttons.Button_colorstike_whitetext
+        android:id="@+id/btn_choosesecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="选择" />
+
+</RelativeLayout>

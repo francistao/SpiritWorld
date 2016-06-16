@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid 
+                android:color="#30b7b7b7" />
+
+            <stroke 
+                android:width="0dip" 
+                android:color="#aa0000" />
+
+            <corners 
+                android:radius="0dip" />
+        </shape>
+	</item>
+	
+	<!-- 按下 -->
+    <item android:state_focused="true">
+        <shape>
+            <solid 
+                android:color="#30b7b7b7" />
+
+            <stroke 
+                android:width="0dip" 
+                android:color="#aa0000" />
+
+            <corners 
+                android:radius="0dip" />
+        </shape>
+	</item>
+
+    <!-- 没按下 -->
+    <item android:drawable="@drawable/bg_line_top"/>
+
+</selector>

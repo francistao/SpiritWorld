@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="baseColor">#ff6600</color>
+    <color name="lightBaseColor">#ff0000</color>
+    <color name="darkBaseColor">#990000</color>
+    <color name="stateBarColor">#d55b0a</color>
+    <color name="textColor_white">#ffffff</color>
+    <color name="textColor_gray">#858585</color>
+    <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimaryDark">#ee1111</color>
+
+</resources>

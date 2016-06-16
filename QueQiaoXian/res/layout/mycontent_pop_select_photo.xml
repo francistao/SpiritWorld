@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#55555555" >
+
+    <TextView
+        android:id="@+id/photograph"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_above="@+id/line"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/setting_up_selector"
+        android:gravity="center"
+        android:text="@string/take_photos"
+        android:textColor="#ff0479fe"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:layout_above="@+id/albums"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="#ffd9d8d3" />
+
+    <TextView
+        android:id="@+id/albums"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_above="@+id/cancel"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/setting_down_selector"
+        android:gravity="center"
+        android:text="@string/choose_from_album"
+        android:textColor="#ff0479fe"
+        android:textSize="18.0sp" />
+
+    <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/setting_one_selector" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#ff0479fe"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

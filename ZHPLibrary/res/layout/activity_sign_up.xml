@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/library_signup_bgLayout">
+
+    <EditText
+        android:id="@+id/library_signup_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/testStr_123456"
+        android:hint="@string/hintInputNickName" />
+
+    <EditText
+        android:id="@+id/library_signup_password"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library_signup_nickname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/testStr_abcde"
+        android:hint="@string/hintInputPassword" />
+    
+    <EditText
+        android:id="@+id/library_signup_confirm_password"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library_signup_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/testStr_abcde"
+        android:hint="@string/hintInputPassword" />
+
+    <Button
+        android:id="@+id/library_signup_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library_signup_confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onSignUpButtonClick"
+        android:text="@string/signup" />
+
+</RelativeLayout>

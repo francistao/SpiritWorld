@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_usercenter_bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#eeeeee"
+    tools:context="zhp.app.note.MainActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_usercenter_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/usercenter_imageView"
+        android:contentDescription="@string/imageContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_usercenter_toolBar"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimary" 
+        android:src="@drawable/cover"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/usercenter_imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical" >
+            
+			<Button
+                android:id="@+id/usercenter_setIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white_gray_bottom_line"
+                android:textColor="@color/textColor_gray"
+                android:text="设置头像" />
+			
+			<Button
+                android:id="@+id/usercenter_updateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white_gray_bottom_line"
+                android:textColor="@color/textColor_gray"
+                android:text="修改签名" />
+
+			<Button
+			    android:id="@+id/usercenter_changePassword"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/button_white_gray_bottom_line"
+			    android:layout_marginTop="10dp"
+                android:textColor="@color/textColor_gray"
+			    android:text="修改密码" />
+			
+			<Button
+			    android:id="@+id/usercenter_feedback"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/button_white_gray_bottom_line"
+			    android:layout_marginTop="10dp"
+                android:textColor="@color/textColor_gray"
+			    android:text="用户反馈" />
+
+            <Button
+                android:id="@+id/usercenter_exitAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white_gray_bottom_line"
+			    android:layout_marginTop="10dp"
+                android:textColor="@color/textColor_gray"
+                android:text="退出账户" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/usercenter_textview_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/usercenter_imageView"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:background="#55555555" 
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

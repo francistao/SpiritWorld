@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">灵境世界</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="metaioSDKSignature">bwwqXRGFmW0HD8DoTJJnfX886IjjzmscIchabeSx1eU=</string>
+
+    
+    <!-- TC -->
+	<string name="friend_list">好友列表</string>
+	<string name="my_content">我的内容</string>
+	<string name="settings">设置</string>
+	<string name="title">我的标题</string>
+	<string name="content">我的内容</string>
+	<string name="take_photos">拍照</string>
+	<string name="choose_from_album">从相册选择</string>
+	<string name="cancel">取消</string>
+	<string name="add_new_content">添加内容</string>
+	<string name="choose_target_picture">请选择目标图片：</string>
+	<string name="input_target_photo_title">请输入标题：</string>
+	<string name="input_target_photo_content">请输入简介：</string>
+	<string name="title_welcome">欢迎来到</string>
+	<string name="title_appname">灵境世界</string>
+	<string name="friend_name">好友</string>
+	<string name="friend_says">个性签名</string>
+	<string name="add_new_friend">添加好友</string>
+	<string name="please_input_friendnumber">请输入好友号码：</string>
+	<string name="preview">预览图</string>
+	<string name="preview_below">预览图如下：</string>
+	<string name="regist">注册</string>
+	<string name="please_input_username">请输入用户名</string>
+	<string name="plant">植 物</string>
+	<string name="car">汽 车</string>
+	<string name="animal">动 物</string>
+	<string name="decoration">装 饰</string>
+	<string name="human">人 物</string>
+	<string name="building">建 筑</string>
+	<string name="please_input_image_type">请选择图片类型</string>
+    
+</resources>

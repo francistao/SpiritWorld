@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/zhp/iyalee2/views/buttons/Button_ChangeColorWhenTouch.java" />
+        <ignore path="src/zhp/iyalee2/views/recyclerviews/RecyclerView_WithBtn.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/zhp/iyalee2/utils/Utils_Camera.java" />
+    </issue>
+    <issue id="UseSparseArrays" severity="ignore">
+        <ignore path="src/tc/lingjingworld/Activity_Classify.java" />
+    </issue>
+</lint>

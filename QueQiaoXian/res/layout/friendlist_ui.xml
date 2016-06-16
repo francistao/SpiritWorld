@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:descendantFocusability="blocksDescendants">
+    
+	<android.support.v7.widget.Toolbar
+        android:id="@+id/activity_friendlist_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+    </android.support.v7.widget.Toolbar>
+ 
+     <LinearLayout
+        android:id="@+id/activity_friendist_aboveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="3dp"
+        android:orientation="vertical" 
+        android:layout_below="@+id/activity_friendlist_toolBar">
+        
+    </LinearLayout>
+ 
+    <zhp.android.widgets.FloatingActionButton
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_add"
+        android:layout_width="56.0dip"
+        android:layout_height="56.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:focusable="false"
+        custom:bg_color="@color/colorPrimary"
+        custom:bg_color_pressed="@color/colorPrimaryDark" 
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white" />
+
+</RelativeLayout>

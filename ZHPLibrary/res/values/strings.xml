@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">MathLibrary</string>
+    <!-- 测试 -->
+    <string name = "testStr_123456">123456</string>
+    <string name = "testStr_abcde">abcde</string>
+    
+    <!-- EditText的提示 -->
+    <string name="hintInputRoomName">请输入聊天室的名字</string>
+    <string name="hintInputNickName">请输入用户名</string>
+    <string name="hintInputPassword">请输入密码</string>
+    <string name="hintConfirmPassword">请再次输入密码</string>
+    
+    
+    <!-- 注册 -->
+    <string name="signup">注册</string>    
+    <!-- 新用户注册 -->
+    <string name ="newUserSignUp">新用户注册</string>
+    <!-- 立即登录 -->
+	<string name = "loginRightNow">立即登录</string>	
+	<!-- 用户注册 -->
+    <string name="title_signup">用户注册</string>    
+    <!-- 注册成功 -->
+    <string name="title_signup_success">注册成功</string>    
+    <!-- 注册失败 -->
+    <string name="title_signup_fail">注册失败</string>    
+    <!-- 登录 -->
+    <string name="title_login">登录</string>
+    
+    <!-- 这是图片的描述 -->
+    <string name = "imageContent">图片描述</string>
+    
+    <!-- 恭喜您注册成功！\t赶紧登录体验吧！ -->
+    <string name="signupSuccess">恭喜您注册成功！\t赶紧登录体验吧！</string>    
+    <!-- 用户名已存在！ -->
+	<string name="signup_fail_uername_exist">用户名已存在！</string>	
+	<!-- 用户名的长度必须大于0，小于等于7 -->
+	<string name="userNameLengthLimit">用户名的长度必须大于0，小于等于7</string>	
+	<!--密码的长度必须大于4，小于等于16 -->
+	<string name = "passwordLengthLimit">密码的长度必须大于4，小于等于16</string>	
+	<!-- 无法连接服务器 -->
+	<string name = "cannot_connect_to_server">无法连接服务器</string>
+	<!-- 两次输入的密码不同 -->
+	<string name = "two_psw_diffrent">两次输入的密码不同，请重新输入</string>
+</resources>

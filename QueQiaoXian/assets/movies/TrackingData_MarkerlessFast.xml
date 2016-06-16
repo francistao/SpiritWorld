@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<TrackingData>
+
+	<Sensors>
+		<Sensor
+			Subtype="Fast"
+            Type="FeatureBasedSensorSource" >
+
+            <!-- Assign an ID to this sensor -->
+            <SensorID>FeatureTracking1</SensorID>
+
+            <!-- Parameters that apply to the sensor -->
+            <Parameters>
+				<FeatureDescriptorAlignment>regular</FeatureDescriptorAlignment>
+                <MaxObjectsToDetectPerFrame>5</MaxObjectsToDetectPerFrame>
+                <MaxObjectsToTrackInParallel>5</MaxObjectsToTrackInParallel>
+                <SimilarityThreshold>0.7</SimilarityThreshold>
+            </Parameters>
+
+            <SensorCOS>
+				<SensorCosID>Patch1</SensorCosID>
+				<Parameters>
+					<ReferenceImage>target_movie.png</ReferenceImage>
+					<SimilarityThreshold>0.7</SimilarityThreshold>
+				</Parameters>
+			</SensorCOS>
+			
+		</Sensor>
+	</Sensors>
+
+    <Connections>
+		<COS>
+			<Name>MarkerlessCOS1</Name>
+			<Fuser Type="SmoothingFuser" >
+				<Parameters>
+					<KeepPoseForNumberOfFrames>2</KeepPoseForNumberOfFrames>
+                    <GravityAssistance>
+                    </GravityAssistance>
+                    <AlphaTranslation>1.0</AlphaTranslation>
+                    <GammaTranslation>1.0</GammaTranslation>
+                    <AlphaRotation>0.8</AlphaRotation>
+                    <GammaRotation>0.8</GammaRotation>
+                    <ContinueLostTrackingWithOrientationSensor>false</ContinueLostTrackingWithOrientationSensor>
+                </Parameters>
+            </Fuser>
+            <SensorSource>
+                <SensorID>FeatureTracking1</SensorID>
+                <SensorCosID>Patch1</SensorCosID>
+                <HandEyeCalibration>
+                    <TranslationOffset>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                    </TranslationOffset>
+
+                    <RotationOffset>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                        <W>1</W>
+                    </RotationOffset>
+                </HandEyeCalibration>
+
+                <COSOffset>
+
+                    <TranslationOffset>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                    </TranslationOffset>
+
+                    <RotationOffset>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                        <W>1</W>
+                    </RotationOffset>
+                </COSOffset>
+            </SensorSource>
+        </COS>
+        
+    </Connections>
+
+</TrackingData>
